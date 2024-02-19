@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2new.AdminController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="371.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@guy3.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="357.0" prefHeight="400.0" prefWidth="344.0" style="-fx-background-color: #A0522D;">
+         <children>
+            <TextField fx:id="username" layoutX="75.0" layoutY="157.0" prefHeight="27.0" prefWidth="194.0" promptText="Admin Username" style="-fx-background-color: transparent; -fx-border-color: #fafafa; -fx-border-width: 0 0 1 0;">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="75.0" layoutY="228.0" prefHeight="27.0" prefWidth="203.0" promptText="Admin Password" style="-fx-background-color: transparent; -fx-border-color: #fafafa; -fx-border-width: 0 0 1 0;">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="57.0" layoutY="27.0" text="Admin Login Page" textFill="#fafafa">
+               <font>
+                  <Font name="Courier New" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="87.0" fitWidth="70.0" layoutX="142.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@guy4.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLogin" layoutX="139.0" layoutY="304.0" mnemonicParsing="false" onAction="#checkData" style="-fx-background-color: transparent; -fx-border-color: #FAFAFA; -fx-border-radius: 25;" text="Login" textFill="#fafafa">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblUsername" layoutX="75.0" layoutY="184.0" text="username is empty" textFill="#FAFAFA" visible="false" />
+            <Label fx:id="lblPassword" layoutX="75.0" layoutY="255.0" text="password is empty" textFill="#FAFAFA" visible="false" />
+            <Label fx:id="lblUN9" layoutX="75.0" layoutY="184.0" text="username is over 9 characters" textFill="#FAFAFA" visible="false" />
+            <Label fx:id="lblPW9" layoutX="75.0" layoutY="255.0" text="password is over 9 characters" textFill="#FAFAFA" visible="false" />
+         </children>
+      </Pane>
+      <Button fx:id="btnBack" layoutX="-10.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="42.0" prefWidth="203.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="&lt;- back" textFill="SADDLEBROWN">
+         <font>
+            <Font name="Courier New" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

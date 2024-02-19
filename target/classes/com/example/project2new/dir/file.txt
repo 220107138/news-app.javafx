@@ -1,0 +1,22 @@
+Username: qwerty
+Password: qwe
+Email: zxcv@sdu.edu.kz
+Gender: Male///
+
+Username: sultan
+Password: qwe
+Email: asgsvs@sdu.edu.kz
+Gender: Male///
+
+Username: dsafhas
+Password: jdgd
+Email: dfgdf@sdu.edu.kz
+Gender: Other///
+
+
+
+Username: irjtoert
+Password: ittrrit
+Email: ditdhti@sdu.edu.kz
+Gender: Male///
+
